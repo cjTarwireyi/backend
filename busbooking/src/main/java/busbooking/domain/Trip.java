@@ -1,17 +1,13 @@
 package busbooking.domain;
 
-import org.springframework.boot.autoconfigure.web.ResourceProperties;
-import org.springframework.data.annotation.Id;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by Cornelious on 7/31/2016.
  */
 @Entity
-public class Trip {
+public class Trip implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -26,6 +22,7 @@ public class Trip {
         this.time = objBuilder.time;
         this.destination = objBuilder.destination;
     }
+    private  Trip(){}
     public Long getId() {
         return id;
     }

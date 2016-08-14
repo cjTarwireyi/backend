@@ -1,16 +1,13 @@
 package busbooking.domain;
 
-import org.springframework.data.annotation.Id;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
+import java.io.Serializable;
 
 /**
- * Created by Cornelious on 7/31/2016.
+ * Created by Cornelious on 8/6/2016.
  */
 @Entity
-public class Account {
+public class Account implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -23,6 +20,7 @@ public class Account {
         this.username=accountBuilder.username;
         this.password=accountBuilder.password;
     }
+    public Account(){}
 
     public Long getId() {
         return id;
@@ -59,9 +57,17 @@ public class Account {
             this.password=account.password;
             return  this;
         }
+
         public Account build(){
             return  new Account(this);
         }
+
+
+        @Override
+        public int hashCode() {
+            return (int) (id ^ (id >>> 32));
+        }
+
     }
 
 }

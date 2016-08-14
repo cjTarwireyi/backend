@@ -17,7 +17,7 @@ public class PassengerAddress {
         this.city=objAddressBuilder.city;
         this.code=objAddressBuilder.code;
     }
-
+    private PassengerAddress(){}
     public String getStreet() {
         return street;
     }

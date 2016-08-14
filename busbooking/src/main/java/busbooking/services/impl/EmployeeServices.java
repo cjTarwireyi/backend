@@ -1,9 +1,13 @@
 package busbooking.services.impl;
 
-import busbooking.domain.Employee;
+
+import busbooking.domain.EmployeeEntity;
+import busbooking.repository.EmployeeRepository;
 import busbooking.services.IEmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -11,28 +15,36 @@ import java.util.Set;
  */
 @Service
 public class EmployeeServices implements IEmployeeService {
+
+    @Autowired
+    private EmployeeRepository repository;
     @Override
-    public Employee create(Employee entity) {
-        return null;
+    public EmployeeEntity create(EmployeeEntity entity) {
+        return repository.save(entity);
     }
 
     @Override
-    public Employee readById(Long aLong) {
-        return null;
+    public EmployeeEntity readById(Long id) {
+        return repository.findOne(id);
     }
 
     @Override
-    public Set<Employee> readAll() {
-        return null;
+    public Set<EmployeeEntity> readAll() {
+        Iterable<EmployeeEntity> employeeEntities = repository.findAll();
+        Set<EmployeeEntity> employeeEntitySet = new HashSet<>();
+        for(EmployeeEntity employeeEntity : employeeEntities){
+            employeeEntitySet.add(employeeEntity);
+        }
+        return employeeEntitySet;
     }
 
     @Override
-    public Employee update(Employee entity) {
-        return null;
+    public EmployeeEntity update(EmployeeEntity entity) {
+        return repository.save(entity);
     }
 
     @Override
-    public void delete(Employee entity) {
-
+    public void delete(EmployeeEntity entity) {
+        repository.delete(entity);
     }
 }

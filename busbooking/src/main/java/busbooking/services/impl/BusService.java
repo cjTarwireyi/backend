@@ -1,9 +1,12 @@
 package busbooking.services.impl;
 
 import busbooking.domain.Bus;
+import busbooking.repository.BusRepository;
 import busbooking.services.IBusService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -11,28 +14,35 @@ import java.util.Set;
  */
 @Service
 public class BusService implements IBusService {
+    @Autowired
+   private BusRepository repository;
     @Override
     public Bus create(Bus entity) {
-        return null;
+        return repository.save(entity);
     }
 
     @Override
-    public Bus readById(Long aLong) {
-        return null;
+    public Bus readById(Long id) {
+        return repository.findOne(id);
     }
 
     @Override
     public Set<Bus> readAll() {
-        return null;
+        Iterable<Bus> buses = repository.findAll();
+        Set busSet = new HashSet();
+        for(Bus bus : buses) {
+        busSet.add(bus);
+        }
+        return busSet;
     }
 
     @Override
     public Bus update(Bus entity) {
-        return null;
+        return repository.save(entity);
     }
 
     @Override
     public void delete(Bus entity) {
-
+        repository.delete(entity);
     }
 }

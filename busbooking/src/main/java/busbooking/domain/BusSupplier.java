@@ -1,16 +1,13 @@
 package busbooking.domain;
 
-import org.springframework.data.annotation.Id;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by Cornelious on 7/31/2016.
  */
 @Entity
-public class BusSupplier {
+public class BusSupplier implements Serializable{
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -22,7 +19,7 @@ public class BusSupplier {
         this.name=suplierBuilder.name;
         this.contactNumber=suplierBuilder.contactNumber;
     }
-
+    private BusSupplier(){}
     public Long getId() {
         return id;
     }

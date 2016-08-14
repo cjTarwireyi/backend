@@ -15,4 +15,15 @@ public class AccountTest {
         Assert.assertEquals(account.getUsername(),"Cj");
         Assert.assertEquals(account.getPassword(),"12345678");
     }
+
+    @Test
+    public void testUpdate() throws Exception {
+        Account account = AccountFactory.createAcount("Cj","12345678");
+        Account copyAccount = new Account.AccountBuilder()
+                .copy(account)
+                .password("password")
+                .build();
+        Assert.assertEquals( copyAccount.getPassword(),"password");
+        Assert.assertEquals(copyAccount.getUsername(),"Cj");
+    }
 }

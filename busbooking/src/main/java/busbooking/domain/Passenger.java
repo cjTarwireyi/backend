@@ -1,15 +1,10 @@
 package busbooking.domain;
 
-import org.springframework.data.annotation.Id;
-
-import javax.persistence.GenerationType;
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
+import javax.persistence.*;
 
 import java.io.Serializable;
 
-import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
+
 
 /**
  * Created by Cornelious on 7/30/2016.
@@ -31,6 +26,7 @@ public class Passenger implements Serializable {
         this.lastName=objBuilder.lastName;
         this.objAdress=objBuilder.objAdress;
     }
+    private  Passenger(){}
     public Long getId(){
     return id;
     }
