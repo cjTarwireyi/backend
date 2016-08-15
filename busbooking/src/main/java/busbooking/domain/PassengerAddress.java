@@ -1,12 +1,13 @@
 package busbooking.domain;
 
 import javax.persistence.Embeddable;
+import java.io.Serializable;
 
 /**
  * Created by Cornelious on 7/31/2016.
  */
 @Embeddable
-public class PassengerAddress {
+public class PassengerAddress implements Serializable {
 
     private String street;
     private String city;

@@ -26,9 +26,7 @@ public  Bus(){}
         return id;
     }
 
-    public Long getBusNumber() {
-        return id;
-    }
+
 
     public String getNumberPlate() {
         return numberPlate;
@@ -70,5 +68,9 @@ public  Bus(){}
         }
 
 
+    }
+    @Override
+    public int hashCode() {
+        return (int) (id ^ (id >>> 32));
     }
 }

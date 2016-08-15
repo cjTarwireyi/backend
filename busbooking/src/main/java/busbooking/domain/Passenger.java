@@ -86,5 +86,8 @@ public class Passenger implements Serializable {
 
     }
 
-
+    @Override
+    public int hashCode() {
+        return (int) (id ^ (id >>> 32));
+    }
 }

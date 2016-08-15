@@ -58,5 +58,9 @@ public class BusSupplier implements Serializable{
             return new BusSupplier(this);
         }
     }
+    @Override
+    public int hashCode() {
+        return (int) (id ^ (id >>> 32));
+    }
 
 }

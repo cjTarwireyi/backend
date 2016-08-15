@@ -76,5 +76,8 @@ private Ticket(){}
             return new Ticket(this);
         }
     }
-
+    @Override
+    public int hashCode() {
+        return (int) (id ^ (id >>> 32));
+    }
 }

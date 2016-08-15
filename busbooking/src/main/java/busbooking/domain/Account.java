@@ -63,11 +63,10 @@ public class Account implements Serializable{
         }
 
 
-        @Override
-        public int hashCode() {
-            return (int) (id ^ (id >>> 32));
-        }
-
+    }
+    @Override
+    public int hashCode() {
+        return (int) (id ^ (id >>> 32));
     }
 
 }
