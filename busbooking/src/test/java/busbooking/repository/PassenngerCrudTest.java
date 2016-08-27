@@ -25,7 +25,7 @@ import busbooking.App;
 @SpringApplicationConfiguration(classes = App.class)
 @WebAppConfiguration
 public class PassenngerCrudTest extends AbstractTestNGSpringContextTests {
-    @Autowired
+    /*@Autowired
     private  PassengerRepository repository;
 
     @Test
@@ -67,5 +67,5 @@ public class PassenngerCrudTest extends AbstractTestNGSpringContextTests {
             assertNull("DELETE TEST",deletedpassenger);
         }
 
-    }
+    }*/
 }

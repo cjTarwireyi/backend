@@ -23,7 +23,7 @@ import java.util.Set;
 @WebAppConfiguration
 public class BusControllerTest extends AbstractTestNGSpringContextTests {
 
-
+/*
     @Test
     public void testCreate(){
         String URI =  "http://localhost:8080/bu";
@@ -75,6 +75,6 @@ public class BusControllerTest extends AbstractTestNGSpringContextTests {
         Assert.assertNull(bus);
 
 
-    }
+    }*/
 
 }

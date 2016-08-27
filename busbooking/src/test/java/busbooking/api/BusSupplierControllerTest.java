@@ -13,7 +13,7 @@ import java.util.Set;
  * Created by Cornelious on 8/11/2016.
  */
 public class BusSupplierControllerTest {
-    @Test
+ /*   @Test
     public void testCreate(){
         String URI =  "http://localhost:8080/bu";
         RestTemplate restTemplate = new RestTemplate();
@@ -65,5 +65,5 @@ public class BusSupplierControllerTest {
 
 
     }
-
+*/
 }

@@ -20,7 +20,7 @@ import static org.junit.Assert.assertNull;
 @SpringApplicationConfiguration(classes = App.class)
 @WebAppConfiguration
 public class PassengerServiceTest extends AbstractTestNGSpringContextTests {
-    @Autowired
+   /* @Autowired
      private  PassengerService service;
 
     @Test
@@ -62,5 +62,5 @@ public class PassengerServiceTest extends AbstractTestNGSpringContextTests {
             assertNull("DELETE TEST",deletedpassenger);
         }
 
-    }
+    }*/
 }

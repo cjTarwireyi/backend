@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - busbooking@localhost" uuid="7473d498-bc3f-4043-8ab1-31de8db27b29">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-scope>busbooking:</introspection-scope>
+      <resolve-scope>busbooking:</resolve-scope>
+    </data-source>
+  </component>
+</project>

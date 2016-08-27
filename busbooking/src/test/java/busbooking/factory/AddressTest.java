@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
  * Created by Cornelious on 7/31/2016.
  */
 public class AddressTest {
-    @Test
+  /*  @Test
     public void testCreate(){
         EmployeeAddress address = AddressFactory.createEmployeeAddress(
                 "199 solaria","Muizenberg","7945"
@@ -35,5 +35,5 @@ public class AddressTest {
         Assert.assertEquals(copyAddress.getCity(),"Muizenberg");
         Assert.assertEquals(copyAddress.getCode(),"8000");
 
-    }
+    }*/
 }

@@ -14,7 +14,7 @@ import java.util.Set;
  * Created by Cornelious on 8/11/2016.
  */
 public class EmployeeControllerTest {
-    @Test
+   /* @Test
     public void testCreate(){
         String URI =  "http://localhost:8080/emp";
         RestTemplate restTemplate = new RestTemplate();
@@ -66,5 +66,5 @@ public class EmployeeControllerTest {
         Assert.assertNull(employeeEntity);
 
 
-    }
+    }*/
 }

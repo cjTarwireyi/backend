@@ -25,7 +25,7 @@ import static org.junit.Assert.assertTrue;
 @SpringApplicationConfiguration(classes = App.class)
 @WebAppConfiguration
 public class BusCrudTest extends AbstractTestNGSpringContextTests{
-
+/*
     @Autowired
   private   BusRepository repository;
 
@@ -67,5 +67,5 @@ public class BusCrudTest extends AbstractTestNGSpringContextTests{
             assertNull("DELETE TEST",deletedBus);
         }
 
-    }
+    }*/
 }

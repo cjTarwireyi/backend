@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
  * Created by Cornelious on 8/7/2016.
  */
 public class PassengerTest {
-    private Passenger passenger;
+   /* private Passenger passenger;
     private PassengerAddress passengerAddress;
 
     @Test
@@ -33,5 +33,5 @@ public class PassengerTest {
                 .build();
         Assert.assertEquals(copyPassenger.getName(),"testName");
         Assert.assertEquals(copyPassenger.getObjAdress().getCode(),"1000");
-    }
+    }*/
 }

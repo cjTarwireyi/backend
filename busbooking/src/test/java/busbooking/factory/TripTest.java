@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
  * Created by Cornelious on 8/7/2016.
  */
 public class TripTest {
-    private Trip trip;
+   /* private Trip trip;
 
     @Test
     public void testCreate() throws Exception {
@@ -30,5 +30,5 @@ public class TripTest {
         Assert.assertEquals(copyTrip.getDeparture(),"CPT");
         Assert.assertEquals(copyTrip.getTime(),"10hrs");
 
-    }
+    }*/
 }

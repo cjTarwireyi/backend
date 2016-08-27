@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2881641650">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="MySQL - busbooking@localhost" uuid="7473d498-bc3f-4043-8ab1-31de8db27b29">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>

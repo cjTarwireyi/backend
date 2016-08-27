@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
  * Created by Cornelious on 8/7/2016.
  */
 public class EmployeeTest {
-    private EmployeeEntity employeeEntity;
+   /* private EmployeeEntity employeeEntity;
     private EmployeeAddress employeeAdress;
 
     @Test
@@ -32,5 +32,5 @@ public class EmployeeTest {
                 .build();
         Assert.assertEquals(copyEmployee.getEmpName(),"testName");
 
-    }
+    }*/
 }

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
  * Created by Cornelious on 7/31/2016.
  */
 public class AccountTest {
-    @Test
+   /* @Test
     public void testCreate(){
         Account account = AccountFactory.createAcount("Cj","12345678");
 
@@ -25,5 +25,5 @@ public class AccountTest {
                 .build();
         Assert.assertEquals( copyAccount.getPassword(),"password");
         Assert.assertEquals(copyAccount.getUsername(),"Cj");
-    }
+    }*/
 }

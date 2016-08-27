@@ -100,6 +100,8 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.4.0.RELEASE</version>
+
                 <dependencies>
                     <!-- https://mvnrepository.com/artifact/org.springframework/springloaded -->
                     <dependency>
@@ -110,13 +112,6 @@
                 </dependencies>
             </plugin>
 
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <executable>true</executable>
-                </configuration>
-            </plugin>
 
 
             <plugin>

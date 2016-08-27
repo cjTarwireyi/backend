@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
  * Created by Cornelious on 8/7/2016.
  */
 public class BusTest {
-    private Bus bus;
+   /* private Bus bus;
 
     @Test
     public void testCreate() throws Exception {
@@ -25,5 +25,5 @@ public class BusTest {
                 .build();
         Assert.assertEquals(copyBus.getNumberPlate(),"CA321");
 
-    }
+    }*/
 }
